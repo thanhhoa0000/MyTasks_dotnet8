@@ -1,0 +1,13 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+        <AspnetVersion></AspnetVersion>
+        <MicrosoftExtensionsVersion></MicrosoftExtensionsVersion>
+        <EfVersion></EfVersion>
+        <GrpcVersion></GrpcVersion>
+        <DuendeVersion></DuendeVersion>
+        <ApiVersioningVersion></ApiVersioningVersion>
+    </PropertyGroup>
+    
+</Project>
