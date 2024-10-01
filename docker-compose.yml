@@ -14,5 +14,5 @@
       - 7020:7020
       - 7021:7021
       
-  networks:
-    my-tasks:
+networks:
+  my-tasks:

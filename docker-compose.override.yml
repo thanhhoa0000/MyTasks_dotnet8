@@ -1,0 +1,12 @@
+services:
+  task.api:
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:7021;http://+:7020"
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ${DEV_CERT_PASSWORD}
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /home/app/.aspnet/https/Task.API.pfx
+    ports:
+      - 7020:7020
+      - 7021:7021
+    volumes:
+      - ./certs/.aspnet/https/Task.API.pfx:/home/app/.aspnet/https/Task.API.pfx:ro

@@ -1,10 +1,13 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
+﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS base
+RUN mkdir -p /home/app/.aspnet/https
+COPY ./certs/.aspnet/https/Task.API.pfx /home/app/.aspnet/https/Task.API.pfx 
+RUN chown -R app:app /home/app/.aspnet/https
+USER app
 WORKDIR /app
 EXPOSE 7080
 EXPOSE 7081
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Task.API/Task.API.csproj", "src/Task.API/"]
