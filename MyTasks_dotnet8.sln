@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
+		docker-compose.yml = docker-compose.yml
+		.env = .env
+		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.API", "src\Task.API\Task.API.csproj", "{9F0CB341-2E28-4AA1-9E72-3D00835379F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +24,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F0CB341-2E28-4AA1-9E72-3D00835379F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0CB341-2E28-4AA1-9E72-3D00835379F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0CB341-2E28-4AA1-9E72-3D00835379F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0CB341-2E28-4AA1-9E72-3D00835379F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F0CB341-2E28-4AA1-9E72-3D00835379F1} = {3DB6585E-4532-449A-8FB0-34A3C62CD51C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A5CCB75-B071-4585-B181-D99C470C6CD3}

@@ -1,0 +1,18 @@
+﻿services:
+  task.api:
+    image: task.api
+    build:
+      context: .
+      dockerfile: src/Task.API/Dockerfile
+      args:
+        - DEV_CERT_PASSWORD=${DEV_CERT_PASSWORD}
+    env_file:
+      - .env
+    networks:
+      my-tasks:
+    ports:
+      - 7020:7020
+      - 7021:7021
+      
+  networks:
+    my-tasks:
