@@ -41,11 +41,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,21 +59,18 @@
             }
           },
           "centralPackageVersions": {
-            "Automapper": "13.0.1",
-            "Grpc.AspNetCore": "(, )",
-            "Grpc.AspNetCore.Server.ClientFactory": "(, )",
-            "Grpc.Tools": "(, )",
-            "IdentityModel": "7.0.0",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.8",
-            "Microsoft.AspNetCore.Identity.UI": "8.0.8",
-            "Microsoft.AspNetCore.OpenApi": "8.0.8",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-            "Microsoft.Extensions.Options": "8.0.0",
-            "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.5",
-            "Swashbuckle.AspNetCore": "6.8.1",
-            "Yarp.ReverseProxy": "2.1.0"
+            "Automapper": "[13.0.1, )",
+            "IdentityModel": "[7.0.0, )",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "[8.0.8, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.8, )",
+            "Microsoft.AspNetCore.Identity.UI": "[8.0.8, )",
+            "Microsoft.AspNetCore.OpenApi": "[8.0.8, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[8.0.0, )",
+            "Microsoft.Extensions.Options": "[8.0.0, )",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )",
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": "[8.0.5, )",
+            "Swashbuckle.AspNetCore": "[6.8.1, )",
+            "Yarp.ReverseProxy": "[2.1.0, )"
           },
           "imports": [
             "net461",

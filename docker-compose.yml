@@ -13,6 +13,9 @@
     ports:
       - 7020:7020
       - 7021:7021
+  
+  task.database:
+    image: postgres:16-alpine
       
 networks:
   my-tasks:
