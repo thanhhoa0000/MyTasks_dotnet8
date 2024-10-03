@@ -4,10 +4,13 @@
         <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
         <AspnetVersion>8.0.8</AspnetVersion>
         <MicrosoftExtensionsVersion>8.0.0</MicrosoftExtensionsVersion>
-        <EfVersion></EfVersion>
-        <GrpcVersion></GrpcVersion>
+        <EfVersion>8.0.8</EfVersion>
+
+        <GrpcVersion>2.63</GrpcVersion>
+        <!--
         <DuendeVersion></DuendeVersion>
         <ApiVersioningVersion></ApiVersioningVersion>
+        -->
     </PropertyGroup>
     
     <ItemGroup>
@@ -17,6 +20,16 @@
       <PackageVersion Include="Microsoft.AspNetCore.Identity.UI" Version="$(AspnetVersion)" />
       <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="$(AspnetVersion)" />
       <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.8.1" />
+      
+      <!-- Version togerther with EF Core -->
+      <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EfVersion)" />
+      <PackageVersion Include="Microsoft.EntityFrameworkCore.Abstractions" Version="$(EfVersion)" />
+		  <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EfVersion)" />
+		  <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(EfVersion)" />
+		  <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EfVersion)" />
+      <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+      <PackageVersion Include="Ngpsql" Version="8.0.3" />
+      
       
       <!-- Version together with runtime -->
       <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsVersion)" />
@@ -32,7 +45,8 @@
       <PackageVersion Include="Grpc.Tools" Version="$(GrpcVersion)" PrivateAssets="All" />
       
       <!-- Miscellaneous -->
-      <PackageVersion Include="Automapper" Version="13.0.1" />
+      <PackageVersion Include="AutoMapper" Version="13.0.1" />
+      <PackageVersion Include="Carter" Version="8.2.1" />
       <PackageVersion Include="Yarp.ReverseProxy" Version="2.1.0" />
       <PackageVersion Include="IdentityModel" Version="7.0.0" />
     </ItemGroup>

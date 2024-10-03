@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
-		.env = .env
 		.editorconfig = .editorconfig
+		.env = .env
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.API", "src\Task.API\Task.API.csproj", "{9F0CB341-2E28-4AA1-9E72-3D00835379F1}"
 EndProject
-Project("{9639351D-B070-4C14-BC5A-1FAF855950E9}") = "docker-compose", "docker-compose.dcproj", "{ea9c5fb2-ccff-4740-b86a-11e8095aa102}"
+Project("{9639351D-B070-4C14-BC5A-1FAF855950E9}") = "docker-compose", "docker-compose.dcproj", "{EA9C5FB2-CCFF-4740-B86A-11E8095AA102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

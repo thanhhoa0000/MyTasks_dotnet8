@@ -1,6 +1,6 @@
 ﻿namespace Task.API.Models.Dtos;
 
-public class TaskDto
+public class TaskItemDto
 {
     public Guid Id { get; set; } = new Guid();
     public string Title { get; set; }
