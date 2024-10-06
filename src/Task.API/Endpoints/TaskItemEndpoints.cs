@@ -56,7 +56,7 @@ public class TaskItemEndpoints : ICarterModule
 
     public static async Task<Results<Created, BadRequest<string>>> AddTask(
         TaskContext context,
-        [AsParameters] IMapper mapper,
+        IMapper mapper,
         TaskItemDto taskDto)
     {
         try

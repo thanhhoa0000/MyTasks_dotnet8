@@ -1,3 +1,4 @@
+using System.Reflection;
 using Task.API.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,12 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("TasksDB");
-builder.Services.AddDbContext<TaskContext>(
+builder.Services.AddDbContextFactory<TaskContext>(
     options => options.UseNpgsql(connectionString));
 
-IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
-builder.Services.AddSingleton(mapper);
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 builder.Services.AddHttpContextAccessor();
 
