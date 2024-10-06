@@ -1,13 +1,9 @@
 ﻿namespace Task.API.Configurations;
 
-public class MappingConfig
+public class MappingConfig : Profile
 {
-    public static MapperConfiguration RegisterMaps()
+    public MappingConfig()
     {
-        var mappingConfig = new MapperConfiguration(config =>
-        {
-            config.CreateMap<TaskItem, TaskItemDto>();
-        });
-        return mappingConfig;
+        CreateMap<TaskItem, TaskItemDto>().ReverseMap();
     }
 }
